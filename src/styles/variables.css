@@ -1,0 +1,11 @@
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-blue-200: #cee3e9;
+  --color-blue-600: #4f5d74;
+  --color-blue-900: #313a48;
+  --color-blue-950: #202733;
+  --color-green-300: #53ffaa;
+
+  --font-family-basy: 'Manrope', sans-serif;
+}
