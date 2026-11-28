@@ -12,8 +12,18 @@
   transition: box-shadow 0.2s ease-in-out;
 }
 
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--color-white);
+  outline-offset: 4px;
+}
+
 @media (hover: hover) {
-  .button:hover {
+  .button:hover:not(:disabled) {
     box-shadow: 0 0 40px 0 var(--color-green-300);
   }
 }

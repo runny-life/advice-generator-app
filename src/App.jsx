@@ -38,16 +38,7 @@ function App() {
 
   return (
     <main>
-      {loading && <p>loading...</p>}
-      {error && <p>{error}</p>}
-      {advice && !loading && (
-        <AdviceCard
-          id={advice.id}
-          text={advice.advice}
-          handleClick={handleClick}
-          disabled={loading}
-        />
-      )}
+      <AdviceCard advice={advice} loading={loading} error={error} onRefresh={handleClick} />
     </main>
   );
 }
