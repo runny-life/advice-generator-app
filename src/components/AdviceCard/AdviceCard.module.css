@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: clamp(2rem, 1.523rem + 2.036vw, 2.5rem);
+  max-width: 33.75rem;
+  width: 100%;
+  padding-top: clamp(2.5rem, 2.023rem + 2.036vw, 3rem);
+  padding-bottom: clamp(4rem, 3.523rem + 2.036vw, 4.5rem);
+  padding-inline: clamp(1.469rem, 0.008rem + 6.234vw, 3rem);
+  background-color: var(--color-blue-900);
+  box-shadow: 30px 50px 80px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1rem, 0.523rem + 2.036vw, 1.5rem);
+  text-align: center;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 0.813rem;
+  line-height: 1.35;
+  letter-spacing: 0.31em;
+  text-transform: uppercase;
+  color: var(--color-green-300);
+}

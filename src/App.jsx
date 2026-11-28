@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
 import AdviceCard from '@/components/AdviceCard/AdviceCard.jsx';
-import DiceButton from '@/components/DiceButton/DiceButton.jsx';
 
 const API_URL = 'https://api.adviceslip.com/advice';
 
@@ -41,8 +40,14 @@ function App() {
     <main>
       {loading && <p>loading...</p>}
       {error && <p>{error}</p>}
-      {advice && !loading && <AdviceCard id={advice.id} text={advice.advice} />}
-      <DiceButton onClick={handleClick} disabled={loading} />
+      {advice && !loading && (
+        <AdviceCard
+          id={advice.id}
+          text={advice.advice}
+          handleClick={handleClick}
+          disabled={loading}
+        />
+      )}
     </main>
   );
 }
