@@ -1,0 +1,19 @@
+.button {
+  position: absolute;
+  bottom: -2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--color-green-300);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    box-shadow: 0 0 40px 0 var(--color-green-300);
+  }
+}

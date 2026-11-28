@@ -1,8 +1,10 @@
+import styles from './DiceButton.module.css';
 import diceIcon from '@/assets/images/icon-dice.svg';
 
 function DiceButton({ onClick, disabled }) {
   return (
     <button
+      className={styles.button}
       type="button"
       onClick={onClick}
       disabled={disabled}
